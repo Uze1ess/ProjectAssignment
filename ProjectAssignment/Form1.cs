@@ -73,5 +73,15 @@ namespace ProjectAssignment
         {
 
         }
+
+        private void guna2Panel_container_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
