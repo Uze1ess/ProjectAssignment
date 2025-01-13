@@ -158,5 +158,10 @@ namespace ProjectAssignment
         {
 
         }
+
+        private void InputGunaPictureBox_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

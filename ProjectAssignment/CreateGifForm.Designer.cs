@@ -46,15 +46,17 @@
             this.uploadVideobtn = new Guna.UI2.WinForms.Guna2Button();
             this.GifCreateVideogunabtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.InputGunaPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.zipLZWgunabtn = new Guna.UI2.WinForms.Guna2Button();
+            this.zipDeltagunabtn = new Guna.UI2.WinForms.Guna2Button();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InputGunaPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // openImageDialog
@@ -69,7 +71,7 @@
             this.uploadImagebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.uploadImagebtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.uploadImagebtn.ForeColor = System.Drawing.Color.White;
-            this.uploadImagebtn.Location = new System.Drawing.Point(676, 345);
+            this.uploadImagebtn.Location = new System.Drawing.Point(265, 238);
             this.uploadImagebtn.Name = "uploadImagebtn";
             this.uploadImagebtn.Size = new System.Drawing.Size(142, 38);
             this.uploadImagebtn.TabIndex = 0;
@@ -85,6 +87,7 @@
             this.guna2Panel1.Controls.Add(this.ScaleImageguna2CheckBox);
             this.guna2Panel1.Controls.Add(this.ChangeColorgunaCheckBox);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Controls.Add(this.uploadImagebtn);
             this.guna2Panel1.Location = new System.Drawing.Point(54, 21);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(480, 300);
@@ -98,7 +101,7 @@
             this.applyOptionImagebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.applyOptionImagebtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.applyOptionImagebtn.ForeColor = System.Drawing.Color.White;
-            this.applyOptionImagebtn.Location = new System.Drawing.Point(167, 238);
+            this.applyOptionImagebtn.Location = new System.Drawing.Point(75, 238);
             this.applyOptionImagebtn.Name = "applyOptionImagebtn";
             this.applyOptionImagebtn.Size = new System.Drawing.Size(142, 38);
             this.applyOptionImagebtn.TabIndex = 4;
@@ -172,7 +175,7 @@
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(199, 15);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(198, 15);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(126, 18);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -199,7 +202,8 @@
             this.guna2Panel2.Controls.Add(this.CutVideogunabtn);
             this.guna2Panel2.Controls.Add(this.VideogunaTrackBar);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2Panel2.Location = new System.Drawing.Point(54, 406);
+            this.guna2Panel2.Controls.Add(this.uploadVideobtn);
+            this.guna2Panel2.Location = new System.Drawing.Point(54, 371);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(480, 300);
             this.guna2Panel2.TabIndex = 5;
@@ -212,7 +216,7 @@
             this.CutVideogunabtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.CutVideogunabtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.CutVideogunabtn.ForeColor = System.Drawing.Color.White;
-            this.CutVideogunabtn.Location = new System.Drawing.Point(171, 241);
+            this.CutVideogunabtn.Location = new System.Drawing.Point(75, 242);
             this.CutVideogunabtn.Name = "CutVideogunabtn";
             this.CutVideogunabtn.Size = new System.Drawing.Size(142, 38);
             this.CutVideogunabtn.TabIndex = 5;
@@ -221,19 +225,20 @@
             // 
             // VideogunaTrackBar
             // 
-            this.VideogunaTrackBar.Location = new System.Drawing.Point(94, 196);
+            this.VideogunaTrackBar.Location = new System.Drawing.Point(94, 186);
             this.VideogunaTrackBar.Name = "VideogunaTrackBar";
-            this.VideogunaTrackBar.Size = new System.Drawing.Size(300, 23);
+            this.VideogunaTrackBar.Size = new System.Drawing.Size(300, 40);
             this.VideogunaTrackBar.TabIndex = 1;
             this.VideogunaTrackBar.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
             this.VideogunaTrackBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.VideogunaTrackBar_Scroll);
             // 
             // guna2HtmlLabel4
             // 
+            this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(197, 15);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(194, 15);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(95, 18);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(130, 18);
             this.guna2HtmlLabel4.TabIndex = 0;
             this.guna2HtmlLabel4.Text = "Tùy chọn video";
             // 
@@ -245,7 +250,7 @@
             this.uploadVideobtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.uploadVideobtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.uploadVideobtn.ForeColor = System.Drawing.Color.White;
-            this.uploadVideobtn.Location = new System.Drawing.Point(676, 730);
+            this.uploadVideobtn.Location = new System.Drawing.Point(265, 242);
             this.uploadVideobtn.Name = "uploadVideobtn";
             this.uploadVideobtn.Size = new System.Drawing.Size(142, 38);
             this.uploadVideobtn.TabIndex = 6;
@@ -260,7 +265,7 @@
             this.GifCreateVideogunabtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.GifCreateVideogunabtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.GifCreateVideogunabtn.ForeColor = System.Drawing.Color.White;
-            this.GifCreateVideogunabtn.Location = new System.Drawing.Point(999, 522);
+            this.GifCreateVideogunabtn.Location = new System.Drawing.Point(999, 485);
             this.GifCreateVideogunabtn.Name = "GifCreateVideogunabtn";
             this.GifCreateVideogunabtn.Size = new System.Drawing.Size(180, 45);
             this.GifCreateVideogunabtn.TabIndex = 8;
@@ -269,20 +274,10 @@
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.axWindowsMediaPlayer1);
-            this.guna2Panel3.Location = new System.Drawing.Point(597, 406);
+            this.guna2Panel3.Location = new System.Drawing.Point(597, 371);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(300, 300);
             this.guna2Panel3.TabIndex = 9;
-            // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(300, 300);
-            this.axWindowsMediaPlayer1.TabIndex = 0;
             // 
             // guna2Panel4
             // 
@@ -301,20 +296,60 @@
             this.InputGunaPictureBox.Size = new System.Drawing.Size(300, 300);
             this.InputGunaPictureBox.TabIndex = 2;
             this.InputGunaPictureBox.TabStop = false;
+            this.InputGunaPictureBox.Click += new System.EventHandler(this.InputGunaPictureBox_Click_2);
+            // 
+            // zipLZWgunabtn
+            // 
+            this.zipLZWgunabtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.zipLZWgunabtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.zipLZWgunabtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.zipLZWgunabtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.zipLZWgunabtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.zipLZWgunabtn.ForeColor = System.Drawing.Color.White;
+            this.zipLZWgunabtn.Location = new System.Drawing.Point(929, 710);
+            this.zipLZWgunabtn.Name = "zipLZWgunabtn";
+            this.zipLZWgunabtn.Size = new System.Drawing.Size(142, 38);
+            this.zipLZWgunabtn.TabIndex = 11;
+            this.zipLZWgunabtn.Text = "Nén LZW";
+            // 
+            // zipDeltagunabtn
+            // 
+            this.zipDeltagunabtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.zipDeltagunabtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.zipDeltagunabtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.zipDeltagunabtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.zipDeltagunabtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.zipDeltagunabtn.ForeColor = System.Drawing.Color.White;
+            this.zipDeltagunabtn.Location = new System.Drawing.Point(1110, 710);
+            this.zipDeltagunabtn.Name = "zipDeltagunabtn";
+            this.zipDeltagunabtn.Size = new System.Drawing.Size(142, 38);
+            this.zipDeltagunabtn.TabIndex = 12;
+            this.zipDeltagunabtn.Text = "Nén Delta";
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(300, 300);
+            this.axWindowsMediaPlayer1.TabIndex = 0;
             // 
             // CreateGifForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1282, 790);
+            this.Controls.Add(this.zipDeltagunabtn);
+            this.Controls.Add(this.zipLZWgunabtn);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.GifCreateVideogunabtn);
-            this.Controls.Add(this.uploadVideobtn);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.GifCreateImagegunabtn);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.uploadImagebtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CreateGifForm";
             this.Text = "CreateGifForm";
@@ -322,11 +357,10 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.InputGunaPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -353,5 +387,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox InputGunaPictureBox;
         private Guna.UI2.WinForms.Guna2Button CutVideogunabtn;
         private Guna.UI2.WinForms.Guna2TrackBar VideogunaTrackBar;
+        private Guna.UI2.WinForms.Guna2Button zipLZWgunabtn;
+        private Guna.UI2.WinForms.Guna2Button zipDeltagunabtn;
     }
 }

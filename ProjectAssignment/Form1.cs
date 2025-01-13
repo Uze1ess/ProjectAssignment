@@ -21,35 +21,6 @@ namespace ProjectAssignment
             InitializeComponent();
             container(new CreateGifForm());
         }
-
-        private void guna2Panel2_MouseDown(object sender, MouseEventArgs e)
-        {
-            dragging = true;
-            dragCursorPoint = Cursor.Position;
-            dragFormPoint = this.Location;
-        }
-
-        private void guna2Panel2_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (dragging)
-            {
-                Point newCursorPoint = Cursor.Position;
-                int deltaX = newCursorPoint.X - dragCursorPoint.X;
-                int deltaY = newCursorPoint.Y - dragCursorPoint.Y;
-                this.Location = new Point(dragFormPoint.X + deltaX, dragFormPoint.Y + deltaY);
-            }
-        }
-
-        private void guna2Panel2_MouseUp(object sender, MouseEventArgs e)
-        {
-            dragging = false;
-        }
-
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void CreateGifbtn_Click(object sender, EventArgs e)
         {
             container(new CreateGifForm());
@@ -82,6 +53,11 @@ namespace ProjectAssignment
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Searchbtn_Click(object sender, EventArgs e)
+        {
+            container(new SearchingGif());
         }
     }
 }
